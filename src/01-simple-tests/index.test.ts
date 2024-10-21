@@ -1,6 +1,6 @@
 // Uncomment the code below and write your tests
 
-import { simpleCalculator, Action } from "01-simple-tests";
+import { simpleCalculator, Action } from '01-simple-tests';
 
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
@@ -24,7 +24,11 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should exponentiate two numbers', () => {
-    const result = simpleCalculator({ a: 2, b: 3, action: Action.Exponentiate });
+    const result = simpleCalculator({
+      a: 2,
+      b: 3,
+      action: Action.Exponentiate,
+    });
     expect(result).toBe(8);
   });
 
